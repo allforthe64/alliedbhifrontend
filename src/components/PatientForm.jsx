@@ -105,7 +105,7 @@ const PatientForm = () => {
                                 : lName === '' ? 'Please enter patient last name' : iName === '' ? 'Please enter patient informal name' :
                                 phone === '' ? 'Please enter patient phone number' : 'Please enter patient email')
                     return
-                } else if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) !== true) {
+                } else if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email) !== true) {
                     toast.error('Please enter a valid email address')
                     return
                 }
