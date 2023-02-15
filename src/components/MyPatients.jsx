@@ -7,9 +7,7 @@ const MyPatients = () => {
     let compList = []
 
     useEffect(() =>  {
-        fetch('https://is44c.pythonanywhere.com/get-patients', {
-            mode: 'no-cors'
-        }).then(res => res.json())
+        fetch('https://is44c.pythonanywhere.com/get-patients').then(res => res.json())
         .then(data => setPatients(data))
     }, [])
 
