@@ -74,7 +74,7 @@ const PatientForm = () => {
     }
 
     const submitFunc = () => {
-        fetch('/create-patient', {
+        fetch('https://is44c.pythonanywhere.com/create-patient', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
