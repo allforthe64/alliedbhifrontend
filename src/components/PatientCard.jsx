@@ -1,7 +1,7 @@
 const PatientCard = ({fName, lName, DOB, gender}) => {
 
     const date = DOB.split(' 0')[0].split(', ')[1]
-    console.log(date)
+    console.log(DOB)
 
     return (
         <div className="bg-white shadow-md mb-px py-2 border-b border-grey">
